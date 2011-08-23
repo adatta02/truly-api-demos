@@ -81,7 +81,7 @@ if( array_key_exists("form", $_REQUEST) ){
 if ($auth_request->shouldSendRedirect()) {
 	
 	$redirect_url = $auth_request->redirectURL(getTrustRoot(), getReturnTo());
-
+	
 	if (Auth_OpenID::isFailure($redirect_url)) {
 		die("Could not redirect to server: " . $redirect_url->message);
 	} else {
@@ -89,7 +89,7 @@ if ($auth_request->shouldSendRedirect()) {
 	}
 	
 } else {
-
+  
 	$form_id = 'openid_message';
 	$form_html = $auth_request->htmlMarkup(getTrustRoot(), getReturnTo(), false, array('id' => $form_id));
 

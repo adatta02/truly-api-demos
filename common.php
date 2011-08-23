@@ -9,7 +9,7 @@
 error_reporting( 0 );
 
 // this is the test endpoint.
-define('TRULY_URL', "http://r3.tru.ly/");
+define('TRULY_URL', "https://tru.ly/");
 
 // set up the include paths
 $path_extra = dirname(dirname(dirname(__FILE__)));
@@ -41,15 +41,14 @@ function getTrustRoot() {
 }
 
 function getScheme() {
-    $scheme = 'http';
-    if (isset($_SERVER['HTTPS']) and $_SERVER['HTTPS'] == 'on') { $scheme .= 's'; }
-    return $scheme;
+    $parts = parse_url( TRULY_URL );
+    return $parts["scheme"];
 }
 
 function getConsumer( ){
     $memcache = new Memcache();
     $memcache->connect('localhost', 11211);
     $store = new Auth_OpenID_MemcachedStore( $memcache );
-	return new Auth_OpenID_Consumer($store);
+	  return new Auth_OpenID_Consumer($store);
 }
 
