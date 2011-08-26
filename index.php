@@ -17,6 +17,7 @@
     			<p>(More soon)</p>
     			<ul>
     				<li><a href="/signupVerifyForm.php">Sign up form in using a popup</a></li>
+            <li><a href="/signupIframeForm.php">Sign up form in an iframe</a></li>
     			</ul>
     		</div>
     		

@@ -9,7 +9,7 @@
 error_reporting( 0 );
 
 // this is the test endpoint.
-define('TRULY_URL', "https://tru.ly/");
+define('TRULY_URL', "http://r3.tru.ly/");
 
 // set up the include paths
 $path_extra = dirname(dirname(dirname(__FILE__)));
