@@ -114,7 +114,7 @@ table, td, th {vertical-align:top;}
 .quiet {color:#666;}
 .loud {color:#000;}
 .highlight {background:#ff0;}
-.first {margin-left:0;padding-left:0;}
+.first {margin-left:0;padding-left:0; }
 .last {margin-right:0;padding-right:0;}
 
 
@@ -138,9 +138,9 @@ body {
 }
 
 .body-black {
-  background: #FFF url(pears.jpg) center center fixed no-repeat;
+  background: #000 url(MockupBG.jpg) center top scroll no-repeat;
   -moz-background-size: cover;
-  background-size: cover;
+  /* background-size: cover; */
   margin:0;
 }
 
@@ -214,6 +214,10 @@ p {
     margin-bottom: 10px;
 }
 
+#main .first {
+    margin-top: 0px;   
+}
+
 p#interested {
     font-size:1.2em;
     font-weight:bold;
@@ -226,6 +230,7 @@ div#logo {
     position:relative;
     bottom:-24px;
 }
+
 div#text {
     background-image:url('../images/blacksquare.png');
   padding-top:1em;
@@ -235,8 +240,8 @@ div#main {
     width: 600px;
     height: 450px;
     margin: auto;
-    padding: 40px;
-    margin-top: 125px;
+    padding: 30px;
+    margin-top: 325px;
     background-color:rgba(255,255,255,0.75);
     box-shadow: 0 0 20px #000000;
     -moz-box-shadow: 0 0 20px #000000;
@@ -342,4 +347,9 @@ input[type='submit']:hover {
 #main p {
     color: #333 !important;
     font-weight: bold;
+}
+
+.powered-by {
+    padding-top: 10px;
+    font-weight: bold;   
 }
