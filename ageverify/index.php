@@ -3,7 +3,7 @@
   <head>
     <title>tru.ly Social API Demo</title>
     
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,700&v2' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,700&v2' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />    
   </head>
     <body class="body-black">
@@ -55,7 +55,7 @@
 	                            <h3>Sorry!</h3>
 	                            <p>We were unable to verify your age</p>
 	                            
-	                            <p>At this time you can't access Absolut Pear.</p>
+	                            <p>At this time you can't access the age gated content.</p>
 	                       </div>
 	                	<?php endif; ?>
                 
@@ -66,12 +66,8 @@
 	                <p class="first">You need to be 21+ to access this site.</p> 
 	                <p>Please verify your age by completing the form below.</p>
 	                
-                    <script type="text/javascript" src="http://r3.tru.ly/api-get-js?app_id=521015754515750544897575157&width=100%25&height=360"></script>
+                    <script type="text/javascript" src="https://tru.ly/api-get-js?app_id=521015754515750544897575157&width=100%25&height=360"></script>
                     
-                    <div class="powered-by">
-                        Age verification powered by <a href="https://tru.ly">tru.ly</a> <img src="https://tru.ly/favicon.ico">
-                    </div>
-                
                 <?php endif; ?>
                 
             </div>
