@@ -24,7 +24,6 @@ require_once "Auth/OpenID/MemcachedStore.php";
 require_once "Auth/OpenID/SReg.php";
 require_once "Auth/OpenID/PAPE.php";
 require_once "Auth/OpenID/AX.php";
-require_once "DB.php";
 
 function getReturnTo() {
     return sprintf("%s://%s:%s%s/finish_auth.php",
