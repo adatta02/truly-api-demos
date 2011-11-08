@@ -4,7 +4,7 @@
     <title>tru.ly Social API Demo</title>
     
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,700&v2' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />    
+    <link rel="stylesheet" type="text/css" media="screen" href="/social-api-demo/main.css" />    
   </head>
     <body class="body-black">
     
@@ -64,7 +64,7 @@
                 <?php else: ?>
             
 	                <p class="first">You need to be 21+ to access this site.</p> 
-	                <p>Please verify your age by completing the form below.</p>
+	                <p>Please verify your age by completing the form below, make sure you are using your legal last name.</p>
 	                
                     <script type="text/javascript" src="https://tru.ly/api-get-js?app_id=521015754515750544897575157&width=100%25&height=360"></script>
                     
